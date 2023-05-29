@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.title {
+   font-weight: bold;
+   font-size: 2.7rem;
+   font-family: "Bebas Neue", cursive;
+   letter-spacing: 2px;
+   color: wheat;
+   margin-bottom: 28px;
+}
+
+.form {
+   background-color: transparent;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 100vw;
+   border-radius: 20px;
+   padding: 0 20px;
+   box-shadow: 100px 100px 80px rgba(0, 0, 0, 0.03);
+}
+
+.form .buttonForm {
+   align-self: flex-end;
+}
+
+.input,
+.buttonForm {
+   border: none;
+   outline: none;
+   width: 100%;
+   padding: 25px 10px;
+   border-radius: 10px;
+   box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.015),
+      100px 100px 80px rgba(0, 0, 0, 0.03);
+}
+
+.buttonForm {
+   margin-top: 12px;
+   color: black;
+   text-transform: uppercase;
+   font-weight: bold;
+   background-color: wheat;
+}
+
+.input:focus {
+   border: 1px solid rgb(23, 111, 211);
+}
+
+@media screen and (min-width: 1024px) {
+   .title {
+      padding-top: 80px;
+   }
+
+   .form {
+      width: 30vw;
+      margin: auto;
+   }
+
+   .input,
+   .buttonForm {
+      padding: 15px;
+      font-size: 1.1rem;
+   }
+
+   .buttonForm {
+      margin-top: 20px;
+   }
+}

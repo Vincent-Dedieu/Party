@@ -1,0 +1,38 @@
+.desktop__navbar {
+    display: flex;
+    align-items: center;
+    
+    .link-home {
+        color: wheat;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+
+    .link-add {
+        background: #f4f4f6;
+        color: black;
+        border-radius: 8px;
+        height: 30px;
+        border: 1px solid wheat;
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translate( 0%, -50%);
+        right: 90px;
+        font-weight: bold;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 1024px) {
+    .desktop__navbar {
+       display: none;
+    }
+ }
+ 
+
+

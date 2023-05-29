@@ -1,0 +1,15 @@
+.map-container {
+   width: 100%;
+   height: 230px;
+   margin: 0px auto;
+   border-radius: 20px;
+   margin-bottom: 20px;
+   border: 4px solid #494949;
+}
+
+@media screen and (min-width: 1024px) {
+   .map-container {
+      max-width: 600px; /* change this value to your desired width */
+      height: 300px;
+   }
+}

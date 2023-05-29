@@ -1,0 +1,209 @@
+// background black #1E212B
+// #2B2F35 => encadré "your balance"
+
+.accueil {
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 50px;
+   color: white;
+   background-color: #212121; // #1d2b31
+
+   &__main {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   &__header {
+      border-bottom: 1px solid rgb(250, 250, 234);
+      width: 100%;
+      padding: 21px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      position: relative;
+
+      .header-title {
+         color: wheat;
+         font-size: 17px;
+         font-weight: bold;
+      }
+
+      .header-profil {
+         height: 50px;
+         width: 50px;
+         border-radius: 50%;
+         position: absolute;
+         top: 50%;
+         transform: translate(0%, -50%);
+         right: 10px;
+      }
+   }
+
+   &__location {
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   &__location h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: wheat;
+   }
+
+   &__location-current {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+
+   &__form {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+   }
+
+   &__input {
+      background-color: #eee;
+      border: none;
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 10px;
+      color: lightcoral;
+      cursor: pointer;
+   }
+
+   &__events-counter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 19px;
+      margin-bottom: 20px;
+   }
+
+   &__event-container {
+      height: 35vh;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 30px;
+   }
+
+   &__event-container::-webkit-scrollbar {
+      display: none;
+   }
+
+   &__event {
+      height: 18rem;
+      width: 17.5rem;
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+      flex: 0 0 auto;
+      position: relative;
+      border: 7px solid rgb(250, 250, 234);
+
+      &-info {
+         position: absolute;
+         color: white;
+         border-radius: 14px;
+         background-color: #1e212b;
+         border: 1.5px solid #36505c;
+         padding: 10px;
+         width: 90%;
+         height: 4rem;
+         bottom: -2rem;
+         left: 50%;
+         transform: translate(-50%);
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      &-info h3 {
+         font-weight: bold;
+         font-size: 18px;
+         color: wheat;
+      }
+
+      &-date {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 17vw;
+         height: 5vh;
+         background-color: rgb(250, 250, 234);
+         color: black;
+         border-radius: 5px;
+         position: absolute;
+         top: 10px;
+         font-weight: bold;
+         right: 10px;
+      }
+   }
+
+   &__images {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+   }
+}
+
+// Grand écran
+@media (min-width: 1024px) {
+   .accueil {
+      height: 150vh;
+
+      &__main {
+         padding: 0 30vw;
+      }
+   }
+
+
+
+   .accueil__event-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      overflow-x: inherit;
+   }
+
+   .accueil__event {
+      height: 10rem;
+      width: 10rem;
+
+      .accueil-info {
+         height: 2rem;
+      }
+
+      .accueil__event-date {
+         width: 6vw;
+         height: 1.5vh;
+         font-size: 10px;
+         right: 5%;
+         top: 5%;
+      }
+
+      .accueil-date {
+         width: 6vw;
+         height: 1.5vh;
+         font-size: 10px;
+         right: 15%;
+         top: 15%;
+      }
+
+   }
+
+   .header-profil {
+      top: 50%;
+      transform: translate(0%, -50%);
+   }
+
+   .header-title {
+      display: none;
+   }
+}

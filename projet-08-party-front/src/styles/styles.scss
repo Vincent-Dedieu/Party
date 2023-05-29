@@ -1,0 +1,16 @@
+@use "reset";
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+}
+
+.App {
+   height: 100vh;
+   width: 100vw;
+}
